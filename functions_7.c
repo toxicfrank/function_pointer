@@ -5,7 +5,7 @@
  */
 void print_hello()
 {
-    printf("Hello");
+	printf("Hello");
 }
 /**
  * main - calls the function above
@@ -13,7 +13,7 @@ void print_hello()
  */
 int main(void)
 {
-    void (*ptr)() = &print_hello;
+	void (*ptr)() = &print_hello;
 
-    (*ptr)();
+	(*ptr)();
 }

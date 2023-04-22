@@ -10,7 +10,7 @@ void print_hello(char *name)
 /**We can't use '*name' because it will point the first
  * character in the string hence cannot print the whole name  
  */
-    printf("Hello %s\n", name);
+	printf("Hello %s\n", name);
 }
 /**
  * main - calls the function above
@@ -18,9 +18,9 @@ void print_hello(char *name)
  */
 int main(void)
 {
-    void (*ptr)(char *) = &print_hello;
-    
-    (*ptr)("Frank");
+	void (*ptr)(char *) = &print_hello;
+	
+	(*ptr)("Frank");
 
-    return (0);
+	return (0);
 }

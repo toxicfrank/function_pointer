@@ -6,11 +6,11 @@
 */
 void fun1()
 {
-    printf("Fun1\n");
+	printf("Fun1\n");
 }
 void fun2()
 {
-    printf("Fun2\n");
+	printf("Fun2\n");
 }
 
 /**
@@ -20,7 +20,7 @@ void fun2()
  */
 void wrapper(void (*fun)())
 {
-    fun();
+	fun();
 }
 /**
  * main - calls the functions above
@@ -28,7 +28,7 @@ void wrapper(void (*fun)())
  */
 int main (void)
 {
-    wrapper(fun1);
-    wrapper(fun2);
-    return (0);
+	wrapper(fun1);
+	wrapper(fun2);
+	return (0);
 }

@@ -7,7 +7,7 @@
 /*Using the correct format*/
 void numb(int *num)
 {
-    printf("The number is %d.\n", *num);
+	printf("The number is %d.\n", *num);
 }
 /**
  * main - calls the function above
@@ -15,11 +15,11 @@ void numb(int *num)
  */
 int main(void)
 {
-    int a = 50;
+	int a = 50;
 
-    void (*ptr)(int *) = &numb;
+	void (*ptr)(int *) = &numb;
 
-    (*ptr)(&a);
+	(*ptr)(&a);
 
-    return (0);
+	return (0);
 }

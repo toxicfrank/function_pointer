@@ -7,7 +7,7 @@
  */
 void divide(int a, int b)
 {
-    printf("%d\n", a / b);
+	printf("%d\n", a / b);
 }
 /**
  * main - calls the functions
@@ -15,9 +15,9 @@ void divide(int a, int b)
  */
 int main(void)
 {
-    int a = 14, b = 7;
-    void (*divide_ptr)(int, int) = &divide;
+	int a = 14, b = 7;
+	void (*divide_ptr)(int, int) = &divide;
 
-    (*divide_ptr)(a, b);
-    return (0);
+	(*divide_ptr)(a, b);
+	return (0);
 }
