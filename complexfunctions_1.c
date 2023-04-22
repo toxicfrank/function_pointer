@@ -27,6 +27,7 @@ void print_name(char *name, void (*f)(char *))
 /*Call the function pointer*/
     f(name_copy);
 
+/*Freeing the memory*/
     free(name_copy);
 }
 /**
