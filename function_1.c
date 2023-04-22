@@ -15,13 +15,14 @@ void fun(int a)
  */
 int main(void)
 {
+	int a = 10;
 	/**fun_ptr is a pointer to function fun*/
 	void (*fun_ptr)(int) = &fun;
 	/**The above line is same as the 2 codes below
 	 * (*fun_ptr)(int) = fun
 	 * fun_ptr = &fun;
 	 */
-	(*fun_ptr)(10);
+	(*fun_ptr)(a);
 	/**calling function fun() using the pointer 
 	 * *fun_ptr
 	 */
