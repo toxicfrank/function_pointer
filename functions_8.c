@@ -7,6 +7,9 @@
  */
 void print_hello(char *name)
 {
+/**We can't use '*name' because it will point the first
+ * character in the string hence cannot print the whole name  
+ */
     printf("Hello %s\n", name);
 }
 /**
