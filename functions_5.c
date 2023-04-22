@@ -22,7 +22,6 @@ int main(void)
 
     int (*p)(int, int) = &add;
 
-    i = (*p)(a, b);
-
+    i = (*p)(a, b);/*de-referencing executing the program*/
     printf("%d\n", i);
 }
