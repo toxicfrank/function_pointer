@@ -35,7 +35,11 @@ void multiply(int a, int b)
  */
 int main(void)
 {
-    /*fun_ptr_arr[] is an array of function pointer*/
+ /*fun_ptr_arr[] is an array of function pointer*/
+ /*Eeach prototype is stored in an array*/
+ /*add is in array[0]*/
+ /*subtract is in arrat[1]*/
+ /*multiply is in array[2]*/
     void (*fun_ptr_arr[])(int, int) = {add, subtract, multiply};
     unsigned int ch, a = 15, b = 10;
 
@@ -44,6 +48,7 @@ int main(void)
 
     if (ch > 2)
         return (0);
+/*The code below calls the functions in the specified array*/
     (*fun_ptr_arr[ch])(a, b);
-    return 0;
+    return (0);
 }
