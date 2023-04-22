@@ -18,5 +18,6 @@ int main(void)
     void (*ptr)(char *) = &print_hello;
     
     (*ptr)("Frank");
+
     return (0);
 }
